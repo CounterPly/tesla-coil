@@ -1,3 +1,14 @@
+# Branch Overview:
+
+I was reading Ehlers' paper on Cycle Measurement, and it occurred to me that there might be some intrinsic value in decomposing the average of the computed cycles (purple line) into its constituent elements -- I-Q IFM, Cosine IFM, and veryfid's additional Robust Cycle Measurement (RCM) function.
+
+In the paper Ehlers notes that "some variations of either the I-Q IFM or the Cosine IFM could result in superior performance overall", which would make sense since the character of the market tends to vary from ranging to trending depending on market conditions and time of day. Thus, it would stand to reason that the individual functions themselves may act as supplementary (or occasionally even better) indicators of price movement.
+
+After some code refactoring, I added in the I-Q IFM (red) from Ehlers' paper as well as veryfid's RCM function (green), and the results look quite promising. Indeed, there are instances when red/green cross-overs serve as even earlier leading indicators of upcoming price movement, and the red/green coils themselves also add an interesting, additional level of depth to the coils during periods of contraction and expansion.
+
+![](https://i.gyazo.com/ad291404b3f3b12a972574b0a7eef732.png)
+
+
 # Tesla Coil
 The purpose of this repository is to provide version control history for the Tesla Coil indicator by veryfid on Trading View.
 
